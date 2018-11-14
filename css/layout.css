@@ -44,7 +44,7 @@ body{
 .tab-box > #tab2, .tab-box > #tab2 + a{left:25%;}
 .tab-box > #tab3, .tab-box > #tab3 + a{left:50%;}
 .tab-box > #tab4, .tab-box > #tab4 + a{left:75%;}
-.tab-box > input:checked + a, .tab-box > input:checked:hover + a{background:green;}
+.tab-box > input:checked + a, .tab-box > input:checked:hover + a{background:rgb(0, 65, 45);}
 .tab-box > input:checked + a:after, .tab-box > input:checked:hover + a:after{
     width:0;
     height:0;
@@ -79,10 +79,9 @@ body{
     backface-visibility: hidden;
 }
 .tab-detail{
+    height: 100vh;
     overflow:hidden;
-    text-align:center;
-    background:gray;
-    line-height:100vh;
+    padding-top: 55px;
     color:rgb(255,255,255);
 }
 #tabDetail1{background:black;}
