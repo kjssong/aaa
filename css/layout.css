@@ -83,6 +83,7 @@ body{
     overflow:hidden;
     padding-top: 55px;
     color:rgb(255,255,255);
+    box-sizing: border-box;
 }
 #tabDetail1{background:black;}
 #tabDetail2{background:black;}
