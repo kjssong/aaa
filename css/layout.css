@@ -1,0 +1,133 @@
+/*TAB*/
+body{
+    width:100vw;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+}
+#contents{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.tab-box:berfore{
+    width:100%;
+    height:35px;
+    content:'';
+    position:fixed;
+    background:blue;
+    z-index:9;
+    top:0;
+}
+.tab-box > input, .tab-box > a{
+    width:25%;
+    height:35px;
+    position:fixed;
+    top:0;
+    line-height:35px;	
+    cursor:pointer;
+}
+.tab-box > input{
+    opacity:0;
+    z-index:1000;
+}
+.tab-box > a{
+    z-index:10;
+    color:rgb(255,255,255);
+    text-align:center;
+    background:rgb(202, 108, 0);
+}
+.tab-box > #tab1, .tab-box > #tab1 + a{left:0;}
+.tab-box > #tab2, .tab-box > #tab2 + a{left:25%;}
+.tab-box > #tab3, .tab-box > #tab3 + a{left:50%;}
+.tab-box > #tab4, .tab-box > #tab4 + a{left:75%;}
+.tab-box > input:checked + a, .tab-box > input:checked:hover + a{background:rgb(0, 65, 45);}
+.tab-box > input:checked + a:after, .tab-box > input:checked:hover + a:after{
+    width:0;
+    height:0;
+    content:'';
+    position:absolute;
+    top:100%;
+    left:50%;
+    margin-left:-20px;
+    border:20px solid transparent;
+    pointer-events: none;
+    border-top-color: rgb(0, 65, 45);
+}
+.tab-box > input:hover + a{background:rgb(0, 65, 45);}
+.tab-area__detail, .tab-detail{
+    width:100%;
+    height:100%;
+    position:relative;	
+}
+.tab-area__detail{
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    
+    /* Let's enforce some hardware acceleration */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.tab-detail{
+    height: 100vh;
+    overflow:hidden;
+    padding-top: 55px;
+    color:rgb(255,255,255);
+    box-sizing: border-box;
+}
+#tabDetail1{background:black;}
+#tabDetail2{background:black;}
+#tabDetail3{background:black;}
+#tabDetail4{background:black;}
+#tab1:checked ~ .tab-area__detail {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+#tab2:checked ~ .tab-area__detail {
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+}
+#tab3:checked ~ .tab-area__detail {
+    -webkit-transform: translateY(-200vh);
+    -moz-transform: translateY(-200vh);
+    -o-transform: translateY(-200vh);
+    -ms-transform: translateY(-200vh);
+    transform: translateY(-200vh);
+}
+#tab4:checked ~ .tab-area__detail {
+    -webkit-transform: translateY(-300vh);
+    -moz-transform: translateY(-300vh);
+    -o-transform: translateY(-300vh);
+    -ms-transform: translateY(-300vh);
+    transform: translateY(-300vh);
+}
+
+
+
+/*TABLE*/
+table{vertical-align: middle;}
+.table--outer{margin:50px auto;}
+.table--fix{width:85px;}
+.table--fix th{border:1px solid black;}
+th, td{height:50px;}
+ 
+.scrollbox{width:calc(100vw - 85px);/*고정된 가로길이 빼기*/ overflow-x:auto;}
+.scrollbox table{width:100%;}
+.scrollbox td{min-width:70px; text-align:center; border:1px solid black;}
+.scrollbox td:first-child{border-left:0;}
