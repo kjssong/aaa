@@ -121,7 +121,6 @@ body{
 
 
 /*TABLE*/
-table{vertical-align: middle;}
 .table--outer{margin:50px auto;}
 .table--fix{width:85px;}
 .table--fix th{border:1px solid black;}
