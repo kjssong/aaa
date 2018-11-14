@@ -38,7 +38,7 @@ body{
     z-index:10;
     color:rgb(255,255,255);
     text-align:center;
-    background:orange;
+    background:rgb(202, 108, 0);
 }
 .tab-box > #tab1, .tab-box > #tab1 + a{left:0;}
 .tab-box > #tab2, .tab-box > #tab2 + a{left:25%;}
@@ -55,9 +55,9 @@ body{
     margin-left:-20px;
     border:20px solid transparent;
     pointer-events: none;
-    border-top-color: green;
+    border-top-color: rgb(0, 65, 45);
 }
-.tab-box > input:hover + a{background:green;}
+.tab-box > input:hover + a{background:rgb(0, 65, 45);}
 .tab-area__detail, .tab-detail{
     width:100%;
     height:100%;
@@ -85,10 +85,10 @@ body{
     line-height:100vh;
     color:rgb(255,255,255);
 }
-#tabDetail1{background:skyblue;}
+#tabDetail1{background:black;}
 #tabDetail2{background:black;}
-#tabDetail3{background:red;}
-#tabDetail4{background:gray;}
+#tabDetail3{background:black;}
+#tabDetail4{background:black;}
 #tab1:checked ~ .tab-area__detail {
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
