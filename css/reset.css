@@ -138,7 +138,8 @@ a:focus {
  */
 
 a:active,
-a:hover {
+a:hover,
+a {
     outline: 0;
     text-decoration: none;
 }
