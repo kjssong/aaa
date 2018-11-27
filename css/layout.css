@@ -130,3 +130,7 @@ th, td{height:50px;}
 .scrollbox table{width:100%;}
 .scrollbox td{min-width:70px; text-align:center; border:1px solid white;}
 .scrollbox td:first-child{border-left:0;}
+
+
+
+.vat {vertical-align: top;}
