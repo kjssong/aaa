@@ -154,17 +154,25 @@ th, td{height:40px;}
     content: '';
     width: 2px;
     height: 22px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     background: rgb(255,255,255);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg) translate(-50%, -50%);
+    -ms-transform: rotate(45deg) translate(-50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
 }
 .abs:after {
     content: '';
     width: 22px;
     height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     background: rgb(255,255,255);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg) translate(-50%, -50%);
+    -ms-transform: rotate(45deg) translate(-50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
 }
