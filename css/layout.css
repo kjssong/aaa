@@ -24,7 +24,7 @@ body{
 .table--fix th{border:1px solid white;}
 th, td{height:40px;}
  
-.scrollbox{width:calc(100vw - 105px);/*고정된 가로길이 빼기*/ overflow-x:auto;}
+.scrollbox{width:calc(100vw - 125px);/*고정된 가로길이, 여백 빼기*/ overflow-x:auto;}
 .scrollbox table{width:100%;}
 .scrollbox td{min-width:70px; text-align:center; border:1px solid white;}
 .scrollbox td:first-child{border-left:0;}
