@@ -18,7 +18,8 @@ body{
 
 
 /*TABLE*/
-.table--outer{margin:50px auto;}
+.table-box {margin: 0 20px;}
+.table--outer{margin:20px 0 0 0;}
 .table--fix{width:85px;}
 .table--fix th{border:1px solid white;}
 th, td{height:40px;}
