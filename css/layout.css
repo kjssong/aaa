@@ -18,7 +18,7 @@ body{
 
 
 /*TABLE*/
-.table-box {margin: 0 20px;}
+.table-box {width: calc(100% - 40px); margin:20px auto 0;}
 .table--outer{margin:20px 0 0 0;}
 .table--fix{width:85px;}
 .table--fix th{border:1px solid white;}
