@@ -124,7 +124,7 @@ body{
 .table--outer{margin:50px auto;}
 .table--fix{width:85px;}
 .table--fix th{border:1px solid white;}
-th, td{height:50px;}
+th, td{height:25px;}
  
 .scrollbox{width:calc(100vw - 85px);/*고정된 가로길이 빼기*/ overflow-x:auto;}
 .scrollbox table{width:100%;}
@@ -134,3 +134,19 @@ th, td{height:50px;}
 
 
 .vat {vertical-align: top;}
+
+.att {position: relative; top: 0; left: 0;}
+.att:after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(255,255,255);
+    border-radius: 50%;
+}
