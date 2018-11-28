@@ -30,7 +30,7 @@ th, td{height:40px;}
 .scrollbox td:first-child{border-left:0;}
 
 
-
+.year {height: 81px;}
 .vat {vertical-align: top;}
 
 .att, .abs {position: relative; top: 0; left: 0;}
