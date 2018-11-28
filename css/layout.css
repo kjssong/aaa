@@ -36,8 +36,8 @@ th, td{height:40px;}
 .att, .abs {position: relative; top: 0; left: 0;}
 .att:after {
     content: '';
-    width: 22px;
-    height: 22px;
+    width: 17px;
+    height: 17px;
     display: block;
     position: absolute;
     top: 50%;
