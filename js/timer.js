@@ -24,6 +24,7 @@ function numChange(){
     var cNb = document.getElementById('numB');
     var dateArray = date.getSeconds().toString().split('');
     
+    console.log(dateArray);
     console.log(dateArray[0]);
     console.log(dateArray[1]);
 
