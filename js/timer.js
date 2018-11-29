@@ -20,29 +20,32 @@ function printCurrentDate() {
 
 function numChange(){
 	var date = new Date();
-    var cN = document.getElementById('numA');
-    var cN = document.getElementById('numB');
+    var cNa = document.getElementById('numA');
+    var cNb = document.getElementById('numB');
+    var dateArray = date.getSeconds().toString().split('');
 
-	console.log(cN.className);
+    console.log(cN.className);
+    
+    console.log(dateArray);
 
 	if(date.getSeconds() == "1"){
-		cN.className = "num1";
+        cNb.className = "num1";
 	}else if(date.getSeconds() == "2"){
-		cN.className = "num2";
+        cNb.className = "num2";
 	}else if(date.getSeconds() == "3"){
-		cN.className = "num3";
+        cNb.className = "num3";
 	}else if(date.getSeconds() == "4"){
-		cN.className = "num4";
+        cNb.className = "num4";
 	}else if(date.getSeconds() == "5"){
-		cN.className = "num5";
+        cNb.className = "num5";
 	}else if(date.getSeconds() == "6"){
-		cN.className = "num6";
+        cNb.className = "num6";
 	}else if(date.getSeconds() == "7"){
-		cN.className = "num7";
+        cNb.className = "num7";
 	}else if(date.getSeconds() == "8"){
-		cN.className = "num8";
+        cNb.className = "num8";
 	}else if(date.getSeconds() == "9"){
-		cN.className = "num9";
+        cNb.className = "num9";
 	}else{
 		cN.className = "num0";
 	}
