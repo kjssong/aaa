@@ -25,7 +25,7 @@ function numChange(){
 	console.log(cN.className);
 
 	if(date.getSeconds() == "1"){
-		cN.classList = "num1";
+		cN.className = "num1";
 	}else if(date.getSeconds() == "2"){
 		cN.className = "num2";
 	}else if(date.getSeconds() == "3"){
