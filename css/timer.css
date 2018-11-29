@@ -1,0 +1,78 @@
+.timer-box {color: rgb(255,255,255);}
+
+/*공통*/
+.num {
+	width: 100px;
+	height:200px;
+	position:relative;
+	top: 0;
+	left: 0;
+	background-color:rgb(50,50,50);
+}
+.num span {
+	display: block;
+	position: absolute;
+	background-color: rgb(255,255,255);
+}
+.n1, .n3, .n5, .n7 {
+	width: 20px;
+	height: 100px;
+}
+.n2, .n4, .n6 {
+	width: 100px;
+	height: 20px;
+}
+
+/*세로 왼쪽*/
+.n1{	
+	top: 0;
+	left: 0;
+}
+.n5 {
+	bottom: 0;
+	left: 0;
+}
+/*세로 오른쪽*/
+.n3 {
+	top: 0;
+	right: 0;
+}
+.n7 {
+	bottom: 0;
+	right: 0;
+}
+/*가로 위*/
+.n2 {	
+	top: 0;
+	left: 0;
+}
+/*가로 아래*/
+.n6 {
+	bottom: 0;
+	left: 0;
+}
+/*가로 중간*/
+.n4 {
+	top: 50%;
+	left: 0;
+	margin-top: -10px;
+}
+
+/*0~9*/
+#num0 .n4 {display: none;}
+
+#num1 .n1, #num1 .n5, #num1 .n2, #num1 .n6, #num1 .n4 {display: none;}
+
+#num2 .n1, #num2 .n7 {display: none;}
+
+#num3 .n1, #num3 .n5 {display: none;}
+
+#num4 .n2, #num4 .n6, #num4 .n5{ display: none;}
+
+#num5 .n3, #num5 .n5 {display: none;}
+
+#num6 .n3 {display: none;}
+
+#num7 .n1, #num7 .n4, #num7 .n6, #num7 .n5 {display: none;}
+
+#num9 .n5, #num9 .n6 {display: none;}
