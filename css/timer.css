@@ -1,7 +1,7 @@
 .timer-box {color: rgb(255,255,255);}
 
 /*공통*/
-.timer-box__seconds div {
+.timer-box div {
 	width: 100px;
 	height:200px;
 	position:relative;
@@ -9,7 +9,7 @@
 	left: 0;
 	background-color:rgb(50,50,50);
 }
-.timer-box__seconds span {
+.timer-box span {
 	display: block;
 	position: absolute;
 	background-color: rgb(255,255,255);
@@ -59,28 +59,28 @@
 }
 
 /*0~9*/
-.timer-box__seconds .num0 .n4 {display: none;}
+.timer-box .num0 .n4 {display: none;}
 
-.timer-box__seconds .num1 .n1, .timer-box__seconds .num1 .n5, .timer-box__seconds .num1 .n2, .timer-box__seconds .num1 .n6, .timer-box__seconds .num1 .n4 {display: none;}
+.timer-box .num1 .n1, .timer-box .num1 .n5, .timer-box .num1 .n2, .timer-box .num1 .n6, .timer-box .num1 .n4 {display: none;}
 
-.timer-box__seconds .num2 .n1, .timer-box__seconds .num2 .n7 {display: none;}
+.timer-box .num2 .n1, .timer-box .num2 .n7 {display: none;}
 
-.timer-box__seconds .num3 .n1, .timer-box__seconds .num3 .n5 {display: none;}
+.timer-box .num3 .n1, .timer-box .num3 .n5 {display: none;}
 
-.timer-box__seconds .num4 .n2, .timer-box__seconds .num4 .n6, .timer-box__seconds .num4 .n5{ display: none;}
+.timer-box .num4 .n2, .timer-box .num4 .n6, .timer-box .num4 .n5{ display: none;}
 
-.timer-box__seconds .num5 .n3, .timer-box__seconds .num5 .n5 {display: none;}
+.timer-box .num5 .n3, .timer-box .num5 .n5 {display: none;}
 
-.timer-box__seconds .num6 .n3 {display: none;}
+.timer-box .num6 .n3 {display: none;}
 
-.timer-box__seconds .num7 .n1, .timer-box__seconds .num7 .n4, .timer-box__seconds .num7 .n6, .timer-box__seconds .num7 .n5 {display: none;}
+.timer-box .num7 .n1, .timer-box .num7 .n4, .timer-box .num7 .n6, .timer-box .num7 .n5 {display: none;}
 
-.timer-box__seconds .num9 .n5, .timer-box__seconds .num9 .n6 {display: none;}
+.timer-box .num9 .n5, .timer-box .num9 .n6 {display: none;}
 
 
 /*SECONDS*/
-.timer-box__seconds #numA {
+.timer-box #numA {
     display: inline-block;
     margin-right: 10px;
 }
-.timer-box__seconds #numB {display: inline-block;}
+.timer-box #numB {display: inline-block;}

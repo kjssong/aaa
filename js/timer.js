@@ -2,7 +2,9 @@ window.onload = function(){
 	startInterval();	
 	//printCurrentDate();
 
-	numChange();
+    numChange();
+    
+    timer();
 }
 function startInterval() {
 	setInterval(numChange, 1000);
@@ -66,4 +68,21 @@ function numChange(){
 		cNb.className = "num0";
 	}
 
+}
+
+
+
+function timer(){
+    var count = 10;
+    var counter = setInterval(tiemr, 1000);
+
+    count--;
+
+    if(count <= 0){
+        clearInterval(counter);
+
+        document.getElementById("timer").innerHtml = "";
+        return;
+    }
+    document.getElementById("timer").innerHtml = count;
 }
