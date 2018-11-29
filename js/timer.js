@@ -20,7 +20,8 @@ function printCurrentDate() {
 
 function numChange(){
 	var date = new Date();
-	var cN = document.getElementById('num');
+    var cN = document.getElementById('numA');
+    var cN = document.getElementById('numB');
 
 	console.log(cN.className);
 
