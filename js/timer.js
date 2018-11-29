@@ -26,7 +26,8 @@ function numChange(){
 
     console.log(cNa.className);
     
-    console.log(dateArray);
+    console.log(dateArray[0]);
+    console.log(dateArray[1]);
 
 	if(date.getSeconds() == "1"){
         cNb.className = "num1";
