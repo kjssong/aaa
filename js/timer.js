@@ -3,6 +3,7 @@ window.onload = function(){
 	//printCurrentDate();
 
     numChange();
+    timer();
 }
 function startInterval() {
 	setInterval(numChange, 1000);
@@ -16,8 +17,6 @@ function printCurrentDate() {
 	document.getElementById("tm").innerHTML = date.getMinutes();
 	document.getElementById("s").innerHTML = date.getSeconds();
 }
-
-
 function numChange(){
 	var date = new Date();
     var cNa = document.getElementById('numA');
@@ -65,4 +64,14 @@ function numChange(){
 	}else{
 		cNb.className = "num0";
 	}
+}
+
+
+function timer(){
+    var time = 10;
+    var timeSec = function(){
+        time--;
+        document.getElementById("timer").innerHTML = time;
+    }
+    setInterval(timeSec, 1000);
 }
