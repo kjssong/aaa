@@ -71,6 +71,11 @@ function timer(){
     var time = 10;
     var timeSec = function(){
         time--;
+        
+        if(time == 5){
+            console.log("5");
+        }
+
         document.getElementById("timer").innerHTML = time;
     }
     setInterval(timeSec, 1000);
