@@ -23,6 +23,9 @@ function numChange(){
     var cNa = document.getElementById('numA');
     var cNb = document.getElementById('numB');
     var dateArray = date.getSeconds().toString().split('');
+    
+    console.log(dateArray[0]);
+    console.log(dateArray[1]);
 
     /*초 - 첫번째 자리*/
     if(dateArray[0] == "1"){
