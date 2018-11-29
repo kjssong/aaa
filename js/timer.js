@@ -20,30 +20,30 @@ function printCurrentDate() {
 
 function numChange(){
 	var date = new Date();
-	var cN = document.getElementsByClassName('num')[0];
+	var cN = document.getElementById('num');
 
-	console.log(cN.classList);
+	console.log(cN.className);
 
 	if(date.getSeconds() == "1"){
 		cN.classList = "num1";
 	}else if(date.getSeconds() == "2"){
-		cN.classList = "num2";
+		cN.className = "num2";
 	}else if(date.getSeconds() == "3"){
-		cN.classList = "num3";
+		cN.className = "num3";
 	}else if(date.getSeconds() == "4"){
-		cN.classList = "num4";
+		cN.className = "num4";
 	}else if(date.getSeconds() == "5"){
-		cN.classList = "num5";
+		cN.className = "num5";
 	}else if(date.getSeconds() == "6"){
-		cN.classList = "num6";
+		cN.className = "num6";
 	}else if(date.getSeconds() == "7"){
-		cN.classList = "num7";
+		cN.className = "num7";
 	}else if(date.getSeconds() == "8"){
-		cN.classList = "num8";
+		cN.className = "num8";
 	}else if(date.getSeconds() == "9"){
-		cN.classList = "num9";
+		cN.className = "num9";
 	}else{
-		cN.classList = "num0";
+		cN.className = "num0";
 	}
 
 }
