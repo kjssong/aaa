@@ -3,8 +3,6 @@ window.onload = function(){
 	//printCurrentDate();
 
     numChange();
-    
-    timer();
 }
 function startInterval() {
 	setInterval(numChange, 1000);
@@ -67,23 +65,4 @@ function numChange(){
 	}else{
 		cNb.className = "num0";
 	}
-
-}
-
-
-var count = 10;
-var counter = setInterval(timer, 1000);
-
-function timer(){
-    
-
-    count--;
-
-    if(count <= 0){
-        clearInterval(counter);
-
-        document.getElementById("timer").innerHtml = "";
-        return;
-    }
-    document.getElementById("timer").innerHtml = count;
 }
