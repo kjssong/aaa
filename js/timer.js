@@ -28,10 +28,6 @@ function numChange(){
         dateArray = "0" + dateArray;
     }
 
-    console.log(dateArray);
-    console.log(dateArray[0]);
-    console.log(dateArray[1]);
-
     /*초 - 첫번째 자리*/
     if(dateArray[0] == "1"){
         cNa.className = "num1";
