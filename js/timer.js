@@ -24,31 +24,42 @@ function numChange(){
     var cNb = document.getElementById('numB');
     var dateArray = date.getSeconds().toString().split('');
 
-    console.log(cNa.className);
+    /*초 - 첫번째 자리*/
+    if(dateArray[0] == "1"){
+        cNa.className = "num1";
+	}else if(dateArray[0] == "2"){
+        cNa.className = "num2";
+	}else if(dateArray[0] == "3"){
+        cNa.className = "num3";
+	}else if(dateArray[0] == "4"){
+        cNa.className = "num4";
+	}else if(dateArray[0] == "5"){
+        cNa.className = "num5";
+	}else{
+		cNa.className = "num0";
+    }
     
-    console.log(dateArray[0]);
-    console.log(dateArray[1]);
-
-	if(date.getSeconds() == "1"){
+    /*초 - 두번째 자리*/
+	if(dateArray[1] == "1"){
         cNb.className = "num1";
-	}else if(date.getSeconds() == "2"){
+	}else if(dateArray[1] == "2"){
         cNb.className = "num2";
-	}else if(date.getSeconds() == "3"){
+	}else if(dateArray[1] == "3"){
         cNb.className = "num3";
-	}else if(date.getSeconds() == "4"){
+	}else if(dateArray[1] == "4"){
         cNb.className = "num4";
-	}else if(date.getSeconds() == "5"){
+	}else if(dateArray[1] == "5"){
         cNb.className = "num5";
-	}else if(date.getSeconds() == "6"){
+	}else if(dateArray[1] == "6"){
         cNb.className = "num6";
-	}else if(date.getSeconds() == "7"){
+	}else if(dateArray[1] == "7"){
         cNb.className = "num7";
-	}else if(date.getSeconds() == "8"){
+	}else if(dateArray[1] == "8"){
         cNb.className = "num8";
-	}else if(date.getSeconds() == "9"){
+	}else if(dateArray[1] == "9"){
         cNb.className = "num9";
 	}else{
-		cN.className = "num0";
+		cNb.className = "num0";
 	}
 
 }
