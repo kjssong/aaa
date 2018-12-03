@@ -1,6 +1,8 @@
-.timer-box {color: rgb(255,255,255);}
-
 /*공통*/
+.timer-box {
+	font-size: 0;
+	color: rgb(255,255,255);
+}
 .timer-box div {
 	width: 100px;
 	height: 200px;
@@ -83,21 +85,20 @@
     display: inline-block;
     margin-right: 10px;
 }
-.timer-box #numB {
-	display: inline-block;
-	margin-right: 10px;
-}
+.timer-box #numB {display: inline-block;}
 
 /*DOT*/
-.dot {
+.timer-box .dot {
 	width: 30px;
 	height: 200px;
+	display: inline-block;
+	margin-right: 10px;
 	position: relative;
 	top: 0;
 	left: 0;
 	background-color: rgb(50,50,50);
 }
-.dot span {
+.timer-box .dot span {
 	width: 30px;
 	height: 30px;
 	display: block;
