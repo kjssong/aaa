@@ -17,12 +17,15 @@ body {
 }
 .timer-box div {
 	width: 100px;
-	height: 200px;
+	height: 200px;	
+    display: inline-block;
+    margin-right: 10px;
 	position: relative;
 	top: 0;
 	left: 0;
 	background-color: rgb(50,50,50);
 }
+.timer-box div:last-child {margin-right: 0;}
 .timer-box span {
 	display: block;
 	position: absolute;
@@ -92,12 +95,6 @@ body {
 .timer-box .num9 .n5, .timer-box .num9 .n6 {display: none;}
 
 
-/*NUMBER*/
-.timer-box > div {
-    display: inline-block;
-    margin-right: 10px;
-}
-.timer-box > div:last-child {margin-right: 0;}
 
 /*DOT*/
 .timer-box .dot {
