@@ -8,13 +8,6 @@ body{
     color: rgb(255,255,255);
     background: rgb(0,0,0);
 }
-#contents{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0;
-}
 
 
 /*TABLE*/
