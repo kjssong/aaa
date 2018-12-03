@@ -34,6 +34,8 @@ function numChange(){
 
         if(dateHArray[0] == "1"){
                 tHa.className = "num1";
+        }else if(dateHArray[0] == "2"){
+                tHa.className = "num2";
         }else{
                 tHa.className = "num0";
         }
