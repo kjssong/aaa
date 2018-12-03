@@ -1,0 +1,141 @@
+body {
+    color: rgb(255,255,255);
+    background: rgb(0,0,0);
+}
+#contents {
+	width: 100%;
+	height: 100vh;
+	display: table;
+}
+/*공통*/
+.timer-box {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 0;
+	color: rgb(255,255,255);
+}
+.timer-box div {
+	width: 100px;
+	height: 200px;	
+    display: inline-block;
+    margin-right: 10px;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: rgb(50,50,50);
+}
+#numHB, #numMB, #numSB {margin-right: 0;}
+.timer-box span {
+	display: block;
+	position: absolute;
+	background-color: rgb(255,255,255);
+}
+.n1, .n3, .n5, .n7 {
+	width: 20px;
+	height: 100px;
+}
+.n2, .n4, .n6 {
+	width: 100px;
+	height: 20px;
+}
+
+/*세로 왼쪽*/
+.n1{	
+	top: 0;
+	left: 0;
+}
+.n5 {
+	bottom: 0;
+	left: 0;
+}
+/*세로 오른쪽*/
+.n3 {
+	top: 0;
+	right: 0;
+}
+.n7 {
+	bottom: 0;
+	right: 0;
+}
+/*가로 위*/
+.n2 {	
+	top: 0;
+	left: 0;
+}
+/*가로 아래*/
+.n6 {
+	bottom: 0;
+	left: 0;
+}
+/*가로 중간*/
+.n4 {
+	top: 50%;
+	left: 0;
+	margin-top: -10px;
+}
+
+/*0~9*/
+.timer-box .num0 .n4 {display: none;}
+
+.timer-box .num1 .n1, .timer-box .num1 .n5, .timer-box .num1 .n2, .timer-box .num1 .n6, .timer-box .num1 .n4 {display: none;}
+
+.timer-box .num2 .n1, .timer-box .num2 .n7 {display: none;}
+
+.timer-box .num3 .n1, .timer-box .num3 .n5 {display: none;}
+
+.timer-box .num4 .n2, .timer-box .num4 .n6, .timer-box .num4 .n5{ display: none;}
+
+.timer-box .num5 .n3, .timer-box .num5 .n5 {display: none;}
+
+.timer-box .num6 .n3 {display: none;}
+
+.timer-box .num7 .n1, .timer-box .num7 .n4, .timer-box .num7 .n6, .timer-box .num7 .n5 {display: none;}
+
+.timer-box .num9 .n5, .timer-box .num9 .n6 {display: none;}
+
+
+
+/*DOT*/
+.timer-box .dot {
+	width: 30px;
+	height: 200px;
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: rgb(50,50,50);
+}
+.timer-box .dot span {
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	left: 0;
+	background-color: rgb(255,255,255);
+	-webkit-animation: fadeIn 1s infinite;
+	animation: fadeIn 1s infinite;
+}
+.dot .d1 {top: 50px;}
+.dot .d2 {bottom: 50px;}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
