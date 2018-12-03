@@ -26,18 +26,18 @@ function numChange(){
         var dateSArray = date.getSeconds().toString().split('');
 
         /*시*/
-        if(dateHArray <= 9){
+        if(dateHArray <= 9 && dateMArray <= 9 && dateSArray <= 9){
                 dateHArray = "0" + dateHArray;
+                dateMArray = "0" + dateMArray;
+                dateSArray = "0" + dateSArray;
         }
 
-        /*초 - 첫번째 자리*/
         if(dateHArray[0] == "1"){
                 tHa.className = "num1";
         }else{
                 tHa.className = "num0";
         }
 
-        /*초 - 두번째 자리*/
         if(dateHArray[1] == "1"){
                 tHb.className = "num1";
         }else if(dateHArray[1] == "2"){
@@ -61,11 +61,6 @@ function numChange(){
         }
 
         /*분*/
-        if(dateMArray <= 9){
-                dateMArray = "0" + dateMArray;
-        }
-
-        /*초 - 첫번째 자리*/
         if(dateMArray[0] == "1"){
                 tMa.className = "num1";
         }else if(dateMArray[0] == "2"){
@@ -80,7 +75,6 @@ function numChange(){
                 tMa.className = "num0";
         }
 
-        /*초 - 두번째 자리*/
         if(dateMArray[1] == "1"){
                 tMb.className = "num1";
         }else if(dateMArray[1] == "2"){
@@ -103,12 +97,7 @@ function numChange(){
                 tMb.className = "num0";
         }
 
-        /*초*/        
-        if(dateSArray <= 9){
-                dateSArray = "0" + dateSArray;
-        }
-
-        /*초 - 첫번째 자리*/
+        /*초*/     
         if(dateSArray[0] == "1"){
                 tSa.className = "num1";
         }else if(dateSArray[0] == "2"){
@@ -123,7 +112,6 @@ function numChange(){
                 tSa.className = "num0";
         }
 
-        /*초 - 두번째 자리*/
         if(dateSArray[1] == "1"){
                 tSb.className = "num1";
         }else if(dateSArray[1] == "2"){
