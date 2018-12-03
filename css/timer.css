@@ -93,11 +93,11 @@ body {
 
 
 /*NUMBER*/
-.timer-box #numA {
+.timer-box > div {
     display: inline-block;
     margin-right: 10px;
 }
-.timer-box #numB {display: inline-block;}
+.timer-box > div:last-child {margin-right: 0;}
 
 /*DOT*/
 .timer-box .dot {
