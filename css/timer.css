@@ -83,4 +83,7 @@
     display: inline-block;
     margin-right: 10px;
 }
-.timer-box #numB {display: inline-block;}
+.timer-box #numB {
+	display: inline-block;
+	margin-right: 10px;
+}
