@@ -1,5 +1,5 @@
 window.onload = function(){
-    numChange();
+        startInterval();
 }
 function startInterval() {
 	setInterval(numChange, 1000);
