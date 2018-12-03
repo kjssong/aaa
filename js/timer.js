@@ -18,7 +18,7 @@ function printCurrentDate() {
 	document.getElementById("s").innerHTML = date.getSeconds();
 }
 function numChange(){
-	var date = new Date();
+    var date = new Date();
     var cNa = document.getElementById('numA');
     var cNb = document.getElementById('numB');
     var dateArray = date.getSeconds().toString().split('');
