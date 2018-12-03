@@ -3,11 +3,11 @@
 /*공통*/
 .timer-box div {
 	width: 100px;
-	height:200px;
-	position:relative;
+	height: 200px;
+	position: relative;
 	top: 0;
 	left: 0;
-	background-color:rgb(50,50,50);
+	background-color: rgb(50,50,50);
 }
 .timer-box span {
 	display: block;
@@ -78,7 +78,7 @@
 .timer-box .num9 .n5, .timer-box .num9 .n6 {display: none;}
 
 
-/*SECONDS*/
+/*NUMBER*/
 .timer-box #numA {
     display: inline-block;
     margin-right: 10px;
@@ -87,3 +87,23 @@
 	display: inline-block;
 	margin-right: 10px;
 }
+
+/*DOT*/
+.dot {
+	width: 30px;
+	height: 200px;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: rgb(50,50,50);
+}
+.dot span {
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	left: 0;
+	background-color: rgb(255,255,255);
+}
+.dot .d1 {top: 50px;}
+.dot .d2 {bottom: 50px;}
