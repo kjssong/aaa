@@ -25,7 +25,7 @@ body {
 	left: 0;
 	background-color: rgb(50,50,50);
 }
-.timer-box div:last-child {margin-right: 0;}
+#numHB, #numMB, #numSB {margin-right: 0;}
 .timer-box span {
 	display: block;
 	position: absolute;
