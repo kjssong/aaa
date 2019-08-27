@@ -25,6 +25,11 @@
     <!--script src=""></script-->
     <style>
         button {width: 200px; height: 100px; display: block; margin: 10px auto; background: orange; color: white; font-size: 30px;}
+
+		ul li {display: none;}
+		#cA:checked ~ ul li.a {display: block;}
+		#cB:checked ~ ul li.b {display: block;}
+		#cC:checked ~ ul li.c {display: block;}
     </style>
 </head>
 
@@ -42,9 +47,23 @@
 
     <!--contents-->
     <div id="contents">
-        <button type="button" id="btnA">A Button</button>
-        <button type="button" id="btnB">B Button</button>
-        <button type="button" id="btnC">C Button</button>
+        <div class="">
+			<input type="checkbox" id="cA" checked />
+			<label for="cA">AAA</label>
+			<input type="checkbox" id="cB" checked />
+			<label for="cB">BBB</label>
+			<input type="checkbox" id="cC" checked />
+			<label for="cC">CCC</label>
+
+			<ul>
+				<li class="a">aa</li>
+				<li class="b">bb</li>
+				<li class="c">cc</li>
+				<li class="a">aa</li>
+				<li class="b">bb</li>
+				<li class="c">cc</li>
+			</ul>
+		</div>
     </div>
     <!--//contents-->
 
